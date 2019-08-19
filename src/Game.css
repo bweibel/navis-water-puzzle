@@ -1,0 +1,136 @@
+.Game {
+}
+
+.game-header{
+  background: #369;
+  color: white;
+  padding: 5px 10px;
+}
+
+.bucket-list{
+  display: inline;
+  padding: 0;
+}
+
+.bucket{
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+
+    width: 10em;
+    height: 15em;
+    margin: 1em;
+
+    text-align: center;
+    border: 3px solid #666;
+    border-top: 1px solid #ccc;
+    border-radius: 5px 5px 15px 15px;
+    background: whitesmoke;
+}
+
+  .bucket:hover .buttons{
+    opacity: 1;
+  }
+
+.buttons{
+  position: absolute;
+  margin-top: 10px;
+  z-index: 10;
+  opacity: 0;
+  transition: opacity .25s;
+}
+
+button{
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    font-size: 16px;
+    background: rgba(0,0,0,0.5);
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+    margin: 5px;
+}
+
+button:hover{
+  background: #333;
+}
+
+button.disabled {
+  background: lightgray;
+}
+
+.goal-bucket{
+  width: 300px;
+  height: 300px;
+}
+
+.goal-message {
+  font-size: 120px;
+  margin-top: 50px;
+  position: absolute;
+  z-index: 15;
+  width: 100%;
+  opacity: .8;
+}
+
+.goal-text{
+  position: absolute;
+  width: 100%;
+  font-weight: Bold;
+  font-size: 30px;
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.water{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    transform: scaleY(1);
+    transform-origin: bottom;
+    background-color: #369;
+    z-index: 10;
+
+    transition: transform 0.3s ease-out;
+}
+
+.goal-water{
+  background-color: lightblue;
+  border-top: solid limegreen 2px;
+  z-index: 5;
+}
+
+.amount{
+  position: absolute;
+  font-weight: Bold;
+  font-size: 30px;
+  width: 100%;
+  left: 0;
+  bottom: 10px;
+  z-index: 15;
+  color: #fff;
+  text-shadow: 1px 1px 10px rgba(0,0,0,1)
+}
+
+footer{
+  color: #ccc;
+  text-align: center;
+}
+
+.timer .time, .steps{
+  font-family: monospace;
+  font-size: 18px;
+}
+
+.win-message {
+    font-size: 60px;
+    text-shadow: 0px 0px 10px white;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    z-index: 100;
+    color: #369;
+}
+
