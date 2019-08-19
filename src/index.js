@@ -1,12 +1,37 @@
+/*************************************************************************************
+  Water Riddle
+  Authors: Ben Weibel for NAVIS Take Home Exercise 
+
+  A simulation of the classic "Water Bucket" Riddle 
+  (https://en.wikipedia.org/wiki/Water_pouring_puzzle)
+*************************************************************************************/
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import Game from './Game';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const defaultBuckets = [
+      {
+        id: 0,
+        capacity: 3,
+        waterCount: 0
+      },
+      {
+        id: 1,
+        capacity: 5,
+        waterCount: 0
+      }
+    ];
+const defaultGoalBucket = {
+      waterCount: 0,
+      goal: 4
+    };
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+ReactDOM.render(
+    <Game 
+        defaultBuckets={defaultBuckets}
+        defaultGoalBucket={defaultGoalBucket}
+    />, 
+    document.getElementById('root'));
+
