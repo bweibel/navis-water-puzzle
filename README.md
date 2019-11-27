@@ -1,5 +1,5 @@
 ## Water Pouring Riddle
-Authors: Ben Weibel for NAVIS Take Home Exercise 
+Authors: Ben Weibel for NAVIS
 
 A simulation of the classic "Water Bucket" Riddle 
 (https://en.wikipedia.org/wiki/Water_pouring_puzzle)
